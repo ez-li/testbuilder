@@ -32,7 +32,7 @@ var detectNetwork = function(cardNumber) {
   // then compare cards based on length
 
   // Diner's Club
-	if (firstTwo === '38' || firstTwo === '39') {
+  if (firstTwo === '38' || firstTwo === '39') {
     if (cardLen === 14) {
   		return "Diner's Club";
     }
@@ -46,7 +46,7 @@ var detectNetwork = function(cardNumber) {
   } 
 
   // MasterCard
-	if (firstTwo >= 51 && firstTwo <= 55) {
+  if (firstTwo >= 51 && firstTwo <= 55) {
     if (cardLen === 16) {
   		return "MasterCard";
     }
